@@ -7,7 +7,7 @@ const openMenu = ref(false);
 
 <template>
     <nav
-        class="w-full flex py-8 gap-12 justify-between md:px-24 bg-white px-16 relative"
+        class="w-full flex py-8 gap-12 justify-between md:px-24 bg-white px-8 relative"
     >
         <img :src="Logo" />
         <div class="flex-grow md:flex h-full hidden">

@@ -26,10 +26,16 @@ async function shortenURL() {
   })
     .then((res) => res.json())
     .then((res) => {
-      history.value.push({
-        original: input.value,
-        shortened: res.result_url
-      })
+        const resSchema = z.object({
+            result_url: z.string()
+        })
+        const data = resSchema.safeParse(res)
+        if (data.success) {
+            history.value.push({
+              original: input.value,
+              shortened: data.data.result_url
+            })
+        }
       
       allowClick.value = true
     })

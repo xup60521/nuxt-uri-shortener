@@ -25,7 +25,7 @@ import BoostMobile from "/images/bg-boost-mobile.svg";
             />
             <div class="py-[8rem] flex flex-col md:items-start items-center">
                 <h2
-                    class="text-[5rem] leading-tight font-black md:text-left text-center"
+                    class="md:text-[5rem] text-[3rem] leading-tight font-black md:text-left text-center tracking-wide"
                 >
                     More than just shorter links
                 </h2>
@@ -55,48 +55,48 @@ import BoostMobile from "/images/bg-boost-mobile.svg";
                 class="w-full py-16 relative flex md:flex-row gap-8 flex-col items-center justify-between"
             >
                 <div
-                    class="w-full md:w-[calc(30%)] bg-white -translate-y-[2.5rem] rounded p-8 gap-4 flex pt-16 flex-col z-10 relative"
+                    class="w-full md:w-[calc(30%)] bg-white -translate-y-[2.5rem] rounded p-8 gap-4 flex md:pt-16 pt-20 flex-col z-10 relative"
                 >
                     <img
                         :src="recognition"
-                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] -translate-y-[6rem] p-5 overflow-visible rounded-full bg-violet-950"
+                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] md:-translate-y-[6rem] -translate-y-[7rem] p-5 overflow-visible rounded-full bg-violet-950"
                     />
-                    <h4 class="font-bold text-lg tracking-wide">
+                    <h4 class="font-bold text-lg tracking-wide md:text-left text-center">
                         Brand Recognition
                     </h4>
-                    <p class="text-neutral-400">
+                    <p class="text-neutral-400 md:text-left text-center">
                         Boost your brand recognition with each click. Generic
                         links don't mean a thing. Branded links help instill
                         confidence in your content.
                     </p>
                 </div>
                 <div
-                    class="w-full md:w-[calc(30%)] bg-white rounded p-8 gap-4 flex pt-16 flex-col z-10 relative"
+                    class="w-full md:w-[calc(30%)] bg-white rounded p-8 gap-4 flex md:pt-16 pt-20 flex-col z-10 relative"
                 >
                     <img
                         :src="records"
-                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] -translate-y-[6rem] p-5 overflow-visible rounded-full bg-violet-950"
+                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] md:-translate-y-[6rem] -translate-y-[7rem] p-5 overflow-visible rounded-full bg-violet-950"
                     />
-                    <h4 class="font-bold text-lg tracking-wide">
+                    <h4 class="font-bold text-lg tracking-wide md:text-left text-center">
                         Detailed Records
                     </h4>
-                    <p class="text-neutral-400">
+                    <p class="text-neutral-400 md:text-left text-center">
                         Gain insights into who is clicking your links. Knowing
                         when and where people engage with your content helps
                         inform better decisions.
                     </p>
                 </div>
                 <div
-                    class="w-full md:w-[calc(30%)] bg-white translate-y-[2.5rem] rounded p-8 gap-4 flex pt-16 flex-col z-10 relative"
+                    class="w-full md:w-[calc(30%)] bg-white translate-y-[2.5rem] rounded p-8 gap-4 flex md:pt-16 pt-20 flex-col z-10 relative"
                 >
                     <img
                         :src="customizable"
-                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] -translate-y-[6rem] p-5 overflow-visible rounded-full bg-violet-950"
+                        class="md:size-[4.5rem] absolute md:left-16 left-[50%] -translate-x-[50%] md:-translate-y-[6rem] -translate-y-[7rem] p-5 overflow-visible rounded-full bg-violet-950"
                     />
-                    <h4 class="font-bold text-lg tracking-wide">
+                    <h4 class="font-bold text-lg tracking-wide md:text-left text-center">
                         Fully Customizable
                     </h4>
-                    <p class="text-neutral-400">
+                    <p class="text-neutral-400 md:text-left text-center">
                         Improve brand awarenessand content discoverability
                         through customizable links, supercharging audience
                         engagement.
