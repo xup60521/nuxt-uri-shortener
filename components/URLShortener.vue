@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import ShortenBackground from '/images/bg-shorten-desktop.svg'
 import ShortenBackgroundMobile from '/images/bg-shorten-mobile.svg'
 import { z } from 'zod'
 
 const input = ref('')
-const history = ref([])
+const history = ref<{original: string; shortened: string}[]>([])
 const allowClick = ref(true)
 const isCopiedIndex = ref(-1)
 
@@ -46,7 +46,7 @@ async function shortenURL() {
  * @param {string} itemUrl
  */
 
-async function writeToClipboard(itemIndex, itemUrl) {
+async function writeToClipboard(itemIndex: number, itemUrl: string) {
   const type = 'text/plain'
   const blob = new Blob([itemUrl], { type })
   const data = [new ClipboardItem({ [type]: blob })]
@@ -55,7 +55,7 @@ async function writeToClipboard(itemIndex, itemUrl) {
 }
 
 onMounted(() => {
-  const data = JSON.parse(localStorage.getItem('short-uri'))
+  const data = JSON.parse(localStorage.getItem('short-uri') ?? "[]")
   const dataSchema = z
     .object({
       original: z.string(),

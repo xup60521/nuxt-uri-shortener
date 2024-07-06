@@ -125,4 +125,5 @@ import BoostMobile from "/images/bg-boost-mobile.svg";
         </div>
         <FooterComponent />
     </main>
+  <NuxtPage />
 </template>
